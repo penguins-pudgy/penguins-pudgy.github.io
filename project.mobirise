@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "Pudgy Penguins",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/pudgy-penguins_1.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://penguins-pudgy.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://penguins-pudgy.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "2zru4aoq9c",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Pudgy Penguins™ | Home Official Site",
+        "meta_descr": "Pudgy Penguins' NFT sales surge 500% on mystery map. Danny Park. Yahoo Finance. Pudgy Penguins help drive weekly NFT sales to more than $400 million.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/pudgy-penguins.png\" alt=\"pudgy penguins\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uxcweQ89KC",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#1ba7e0",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#1ba7e0"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Pudgy Penguins: The Rise of a Beloved NFT Collection</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  In the ever-evolving landscape of non-fungible tokens (NFTs), few projects have captured the hearts and minds of collectors and enthusiasts quite like <a href=\"https://penguins-pudgy.github.io/\" class=\"text-primary\"><b>Pudgy Penguins</b></a>. Launched in July 2021, this charming collection of 8,888 unique penguin NFTs quickly gained traction in the NFT community, becoming a symbol of fun, creativity, and community spirit. This blog delves into the origins, unique features, cultural impact, and future prospects of Pudgy Penguins, exploring why they have become a significant player in the NFT space.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What are Pudgy Penguins?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://pudgypenguins.com\" class=\"text-primary\">Pudgy Penguins</a> is a collection of 8,888 hand-drawn penguin NFTs, each with distinct traits and characteristics. The collection was created by a team of artists and developers who aimed to bring joy and a sense of community to the NFT world. Each Pudgy Penguin is unique, featuring various attributes such as clothing, accessories, and backgrounds, which contribute to its rarity and desirability.<br><br><b>Key Features of Pudgy Penguins</b><br>Unique Artwork: Each Pudgy Penguin is individually designed, boasting a variety of traits that make every piece one-of-a-kind. The playful and whimsical art style appeals to a broad audience, attracting both collectors and casual fans.<br>Limited Supply: With only 8,888 NFTs available, Pudgy Penguins maintains a sense of scarcity, which enhances its appeal and value among collectors. The limited supply creates a competitive atmosphere as users seek to own these adorable digital assets.<br>Community Focus: The Pudgy Penguins community is at the heart of the project. The creators emphasize building a strong community around the collection, encouraging interaction among holders and fostering a sense of belonging.<br>Utility and Roadmap: Pudgy Penguins is not just an art collection; it also has a roadmap that outlines future developments and utilities for NFT holders. This includes potential collaborations, merchandise, and even a metaverse presence.<br>Active Social Media Presence: The Pudgy Penguins team actively engages with the community on social media platforms like Twitter and Discord, providing updates, hosting events, and fostering discussions among fans.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Origins of Pudgy Penguins</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The Pudgy Penguins project was launched in July 2021 by a team known as Pudgy Penguins LLC, comprising artists, developers, and community managers. The project was inspired by the desire to create a fun and inclusive brand within the NFT space.<br><br>The initial minting phase took place on July 23, 2021, and it sold out within hours, generating significant hype and excitement among collectors. The project quickly gained traction, thanks in part to its engaging art style, the sense of community it fostered, and the growing interest in NFTs as a whole.<br><br><b>The Art and Design</b><br>The artwork of Pudgy Penguins is characterized by its playful and whimsical style. Each penguin is meticulously designed, featuring a variety of attributes, including different colors, outfits, and accessories. This attention to detail contributes to the uniqueness of each NFT and increases its appeal to collectors.<br><br>The art style resonates with a wide audience, drawing in fans of all ages. The cute and friendly appearance of the penguins evokes a sense of nostalgia and joy, making them highly desirable among collectors.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Community Behind Pudgy Penguins</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">One of the standout features of Pudgy Penguins is its strong community. From the outset, the creators emphasized the importance of building a community around the project. This focus on community engagement has played a pivotal role in the collection's success.<br><br><b>Community Events and Engagement</b><br>The Pudgy Penguins team frequently hosts events and activities for community members. These include giveaways, contests, and community discussions on platforms like Discord and Twitter. This active engagement fosters a sense of belonging among holders, creating a tight-knit community that rallies around the brand.<br><br><b>Philanthropy and Social Impact</b><br>The Pudgy Penguins team has also demonstrated a commitment to social responsibility. They have organized charitable initiatives, donating a portion of their proceeds to various causes. This philanthropic approach resonates with community members, who appreciate a project that gives back to society.<br><br><b>Influencer and Celebrity Support</b><br>Pudgy Penguins gained traction not only through community engagement but also by attracting the attention of influencers and celebrities. Prominent figures in the NFT space have shown support for the project, further amplifying its visibility and desirability.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Market Impact of Pudgy Penguins</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Since their launch, Pudgy Penguins have made a significant impact on the NFT market. The collection quickly became one of the top-selling NFT projects, with some rare penguins fetching impressive prices on secondary markets.<br><br><b>Secondary Market Performance</b><br>The demand for Pudgy Penguins has led to a thriving secondary market. Collectors are willing to pay significant sums for rare penguins, with some selling for hundreds of thousands of dollars. The rarity of certain traits contributes to the competitive nature of the market, driving prices upward.<br><br><b>Comparison with Other NFT Collections</b><br>Pudgy Penguins has often been compared to other popular NFT collections, such as CryptoPunks and Bored Ape Yacht Club. While each collection has its unique appeal, Pudgy Penguins stands out for its community focus and playful art style. The collection's success demonstrates that there is room in the NFT space for projects that prioritize community engagement and creativity.<br><br><b>Trends and Price Volatility</b><br>As with many NFT collections, the market for Pudgy Penguins has experienced price volatility. While some holders have seen substantial returns on their investments, others have faced challenges as market dynamics shift. This volatility is characteristic of the NFT space, where prices can fluctuate dramatically based on trends and demand.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Pudgy Penguins</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The Pudgy Penguins team has ambitious plans for the future of the project. Their roadmap outlines various initiatives aimed at expanding the brand and enhancing the utility of the NFTs.<br><br><b>Expanding the Brand</b><br>The Pudgy Penguins team aims to expand the brand beyond the NFT space. This includes exploring opportunities for merchandise, collaborations with artists and creators, and potentially developing a metaverse presence. By diversifying their offerings, the team hopes to create a lasting impact in the digital and physical realms.<br><br><b>Utility for NFT Holders</b><br>Pudgy Penguins is committed to providing utility for NFT holders. This may include exclusive access to events, special features in future projects, and opportunities for holders to participate in governance decisions. By enhancing the utility of the NFTs, the team aims to increase their value and desirability.<br><br><b>Community Involvement in Development</b><br>The Pudgy Penguins team values community input in shaping the future of the project. They actively seek feedback from holders and engage them in discussions about upcoming developments. This collaborative approach fosters a sense of ownership among community members and ensures that the project evolves in alignment with their interests.<br><br><b>Collaborations and Partnerships</b><br>The team is exploring potential collaborations with other NFT projects, brands, and artists. These partnerships could introduce new opportunities for Pudgy Penguins holders and expand the project's reach within the NFT ecosystem.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Cultural Impact of Pudgy Penguins</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Beyond their market success, Pudgy Penguins have made a cultural impact within the NFT and broader digital art communities. The collection has become a symbol of the joy and creativity that can be found in the NFT space.<br><br><b>Representing the NFT Movement</b><br>Pudgy Penguins exemplify the spirit of the NFT movement by showcasing unique artwork and fostering a sense of community. As NFTs continue to gain mainstream recognition, projects like Pudgy Penguins play a crucial role in shaping public perception of digital assets.<br><br><b>Inspiring Creativity</b><br>The success of Pudgy Penguins has inspired other artists and creators to explore the world of NFTs. The project's playful and whimsical art style encourages creativity and innovation, motivating new artists to experiment with their own digital creations.<br><br><b>Building Connections</b><br>Pudgy Penguins have created connections among collectors, artists, and enthusiasts. The project fosters discussions about art, technology, and the future of the digital economy, encouraging collaboration and exchange of ideas within the community.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">While Pudgy Penguins has experienced tremendous success, the project also faces challenges and considerations that could impact its future.<br><br><b>Market Volatility</b><br>The NFT market is known for its volatility, and Pudgy Penguins is not immune to fluctuations in demand. While the project has seen significant growth, maintaining interest and demand in the long term will be crucial for sustaining value.<br><br><b>Competition</b><br>The NFT space is competitive, with new projects emerging regularly. Pudgy Penguins must continue to innovate and engage its community to stand out in a crowded market.<br><br><b>Regulatory Considerations</b><br>As the NFT space evolves, regulatory scrutiny is increasing. The Pudgy Penguins team must navigate the complexities of legal compliance while maintaining the project's decentralized ethos.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Pudgy Penguins has emerged as a beloved NFT collection, capturing the hearts of collectors and enthusiasts alike. With its unique artwork, strong community focus, and ambitious roadmap, the project exemplifies the potential of NFTs to create connections and inspire creativity.<br><br>As Pudgy Penguins continues to grow and evolve, its impact on the NFT space and beyond is undeniable. The project serves as a reminder of the joy and community spirit that can thrive within the digital art world. Whether you're a collector, artist, or simply a fan of cute and whimsical designs, Pudgy Penguins represents a vibrant and exciting corner of the NFT landscape, inviting all to join in the fun.<br><br><b>Looking Ahead</b><br>The future of Pudgy Penguins is bright, with opportunities for expansion, collaboration, and continued community engagement. As the NFT space continues to evolve, Pudgy Penguins stands as a testament to the creativity and innovation that define this new digital frontier. Whether you're looking to collect, engage, or simply enjoy the artistry, Pudgy Penguins invites you to be part of its ongoing journey.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uxcwf4ZtvJ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
